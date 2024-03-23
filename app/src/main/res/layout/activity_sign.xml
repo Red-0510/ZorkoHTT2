@@ -74,7 +74,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/editTextphone"
         android:layout_width="325dp"
         android:layout_height="60dp"
         android:layout_marginTop="52dp"
@@ -83,7 +83,7 @@
         android:elevation="5dp"
         android:ems="10"
         android:hint="Phone Number"
-        android:inputType="textEmailAddress"
+        android:inputType="phone"
         android:paddingLeft="15dp"
         app:layout_constraintEnd_toEndOf="@+id/textView8"
         app:layout_constraintHorizontal_bias="0.502"
@@ -105,7 +105,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextphone" />
 
     <TextView
         android:id="@+id/alreadyhaveaccbutton"
