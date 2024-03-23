@@ -16,7 +16,6 @@
         android:fontFamily="@font/yeon_sung_regular"
         android:text="Build By\nKuchh Bhi"
         android:textAlignment="center"
-        android:textColor="@color/orange"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/zorco_logo" />
+        />
 
     <TextView
         android:id="@+id/textView5"
@@ -52,6 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/lato_bold"
+        android:text="Deliver Favorite Food"
         android:text="Pure Veg Affordable Fast Food"
         android:textColor="@color/orange"
         android:textSize="16sp"
@@ -137,7 +137,6 @@
         android:layout_width="150dp"
         android:layout_height="57dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/whitebutton"
         android:drawableLeft="@drawable/facebook_3_1"
         android:drawablePadding="15dp"
         android:elevation="5dp"
@@ -156,8 +155,6 @@
         android:layout_width="150dp"
         android:layout_height="57dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/whitebutton"
-        android:drawableLeft="@drawable/google_icon_2"
         android:drawablePadding="15dp"
         android:elevation="5dp"
         android:fontFamily="@font/lato_bold"
