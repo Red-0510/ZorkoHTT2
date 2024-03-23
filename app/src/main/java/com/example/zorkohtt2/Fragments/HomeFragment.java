@@ -19,6 +19,7 @@ import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.interfaces.ItemClickListener;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.zorkohtt2.R;
+import com.example.zorkohtt2.adapter.CartAdapter;
 import com.example.zorkohtt2.adapter.PopularAdapter;
 
 import java.util.ArrayList;
@@ -35,7 +36,6 @@ public class HomeFragment extends Fragment {
         // Find UI elements directly
         ImageSlider imageSlider = view.findViewById(R.id.imageSlider);
         RecyclerView popularRecycleView = view.findViewById(R.id.PopularRecycleView);
-
         // Image Slider setup
         List<SlideModel> imageList = new ArrayList<>();
         imageList.add(new SlideModel(R.drawable.banner1, ScaleTypes.FIT));
@@ -81,7 +81,9 @@ public class HomeFragment extends Fragment {
         foodImages.add(R.drawable.banner1);
         foodImages.add(R.drawable.banner1);
 
-        PopularAdapter adapter = new PopularAdapter(foodName, foodPrices, foodImages);
+        CartAdapter cartAdapter = new CartAdapter();
+
+        PopularAdapter adapter = new PopularAdapter(foodName, foodPrices, foodImages,cartAdapter);
         popularRecycleView.setLayoutManager(new LinearLayoutManager(requireContext()));
         popularRecycleView.setAdapter(adapter);
 

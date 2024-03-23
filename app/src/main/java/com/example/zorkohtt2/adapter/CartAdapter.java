@@ -6,43 +6,43 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.zorkohtt2.R; // Assuming your layout file is in the same resource directory
+import com.example.zorkohtt2.R; // Assuming your layout files are in the same resource directory
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder> {
 
-    private final List<String> items;
-    private final List<String> prices;
-    private final List<Integer> images;
+    private final List<CartItem> items = new ArrayList<>(); // Changed to hold CartItem objects
 
-    public CartAdapter(List<String> items, List<String> prices, List<Integer> images) {
-        this.items = items;
-        this.prices = prices;
-        this.images = images;
+    public CartAdapter() {
     }
 
     @Override
+    @NonNull
     public CartViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.cart_item, parent, false); // Assuming your layout file is named popular_item.xml
+        View view = inflater.inflate(R.layout.cart_item, parent, false); // Assuming your layout file is named cart_item.xml
         return new CartViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(CartViewHolder holder, int position) {
-        String item = items.get(position);
-        String price = prices.get(position);
-        int image = images.get(position);
-        holder.bind(item, price, image);
+        CartItem item = items.get(position);
+        holder.bind(item.getName(), item.getPrice(), item.getImage()); // Assuming CartItem has getter methods
     }
 
     @Override
     public int getItemCount() {
         return items.size();
     }
+
+    public List<CartItem> getItems() {
+        return items;
+    } // Method to access items list
 
     class CartViewHolder extends RecyclerView.ViewHolder {
         private final TextView foodName;
@@ -59,7 +59,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         public void bind(String item, String price, int image) {
             foodName.setText(item);
             foodPrice.setText(price);
-            foodImage.setImageResource(image);
+            foodImage.setImageResource(image); // Assuming CartItem has image data (if applicable)
         }
     }
 }

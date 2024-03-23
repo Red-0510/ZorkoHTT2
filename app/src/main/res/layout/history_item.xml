@@ -22,7 +22,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/foodnamepopular"
+                android:id="@+id/historyname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -30,13 +30,13 @@
                 android:text="Food Name"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="@+id/foodimagepopular"
-                app:layout_constraintStart_toEndOf="@+id/foodimagepopular"
-                app:layout_constraintTop_toTopOf="@+id/foodimagepopular"
+                app:layout_constraintBottom_toBottomOf="@+id/historyimage"
+                app:layout_constraintStart_toEndOf="@+id/historyimage"
+                app:layout_constraintTop_toTopOf="@+id/historyimage"
                 app:layout_constraintVertical_bias="0.466" />
 
             <ImageView
-                android:id="@+id/foodimagepopular"
+                android:id="@+id/historyimage"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="16dp"
@@ -48,7 +48,7 @@
                 app:srcCompat="@drawable/profile_icon" />
 
             <TextView
-                android:id="@+id/foodpricepopular"
+                android:id="@+id/historyprice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="40dp"
@@ -57,9 +57,9 @@
                 android:text="$5"
                 android:textColor="@color/textcolor"
                 android:textSize="30dp"
-                app:layout_constraintBottom_toBottomOf="@+id/foodnamepopular"
+                app:layout_constraintBottom_toBottomOf="@+id/historyname"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/foodnamepopular"
+                app:layout_constraintTop_toTopOf="@+id/historyname"
                 app:layout_constraintVertical_bias="0.384" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
