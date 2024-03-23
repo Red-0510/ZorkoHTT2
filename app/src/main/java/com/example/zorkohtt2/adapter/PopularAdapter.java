@@ -49,6 +49,7 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.PopularV
         private final TextView foodPricePopular;
         private final ImageView foodImagePopular;
 
+
         public PopularViewHolder(View itemView) {
             super(itemView);
             foodNamePopular = itemView.findViewById(R.id.foodnamepopular);

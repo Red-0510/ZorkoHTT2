@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="6dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/namecommunity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/yeon_sung_regular"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="224dp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:maxLines="7"
+                android:text="great food"
+                android:textColor="@color/textcolor"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/namecommunity" />
+
+            <Button
+                android:id="@+id/upvotebutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/up_vote_icon"
+                app:layout_constraintTop_toBottomOf="@+id/comment"
+                tools:layout_editor_absoluteX="24dp" />
+
+            <TextView
+                android:id="@+id/upvotes"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="10"
+                app:layout_constraintBottom_toBottomOf="@+id/upvotebutton"
+                app:layout_constraintStart_toEndOf="@+id/upvotebutton"
+                app:layout_constraintTop_toTopOf="@+id/upvotebutton" />
+
+            <Button
+                android:id="@+id/downvotesbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/down_vote_icon"
+                app:layout_constraintStart_toEndOf="@+id/upvotes"
+                app:layout_constraintTop_toBottomOf="@+id/comment" />
+
+            <TextView
+                android:id="@+id/downvotes"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="10"
+                app:layout_constraintBottom_toBottomOf="@+id/downvotesbutton"
+                app:layout_constraintStart_toEndOf="@+id/downvotesbutton"
+                app:layout_constraintTop_toTopOf="@+id/downvotesbutton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
