@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "236399984607",
+    "project_id": "zorkohtt2-7ab05",
+    "storage_bucket": "zorkohtt2-7ab05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236399984607:android:c4dfaee5bfbf4ce4324e6a",
+        "android_client_info": {
+          "package_name": "com.example.zorkohtt2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB3lc5eJht37Ob1R4vDjzm31OUCmmhNGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236399984607:android:f3213bf16d308333324e6a",
+        "android_client_info": {
+          "package_name": "com.example.zorkohtt2.OtpActivity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB3lc5eJht37Ob1R4vDjzm31OUCmmhNGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

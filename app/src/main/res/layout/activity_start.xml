@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/zorco_logo" />
+        app:srcCompat="@drawable/zorko_logo" />
 
     <TextView
         android:id="@+id/textView4"
